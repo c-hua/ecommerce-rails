@@ -1,2 +1,27 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
+<h1 id="items-title">SUMMER 2014</h1>
+
+<div class="container item-container">
+	<div class-"row">	
+		<% @items.each do |item| %>
+	  		<div class="col-md-3 col-s-6 col-xs-12 item-box"> 
+	  			<div class="image-box">		
+						<%=link_to image_tag(item.photo_url, size: '200x300'), item %>
+					</div>
+					<p class= 'items description'>
+						<p id="item-name"><%= item.name %></p>
+						<p id="item-price"><strong><%= item.price %></strong><br />
+						<!-- <span id="image-box-span"><%#= link_to "View Details", item, :id => "view-details" %></span><br /> <br /><br /> -->
+						<span id="image-box-span"><%= link_to "Quick Look", '#', { 'data-toggle' =>"modal", 'data-target'=>"#details" } %></p></span><br /> <br /><br />
+					</div> 
+
+						<%= render partial: 'items/details', locals: {item: item, shopping_cart_item: @shopping_cart_item} %>
+
+		<% end %> 
+
+
+		
+		<%#=button_to "Add Item to cart",add_item_path(@item), method: :post %>
+	</div> 
+  
+
+</div>

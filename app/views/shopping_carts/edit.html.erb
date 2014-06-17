@@ -1,2 +1,58 @@
-<h1>ShoppingCarts#edit</h1>
-<p>Find me in app/views/shopping_carts/edit.html.erb</p>
+<div class="container">
+  <div class="row sc-titles">
+    <div class="col-md-1">
+
+    </div>
+    <div class= "col-md-5"> 
+      <h4 id="item-header">Item</h4>
+    </div>
+    <div class= "col-md-2"> 
+      <h4>Quantity</h4>
+    </div>
+    <div class= "col-md-2">
+      <h4>Unit Price</h4>
+    </div>
+    <div class= "col-md-2"> 
+      <h4>Total</h4>
+
+    </div>
+  </div>
+
+
+</div>
+<br /><br />
+
+
+  <div class="container">
+    <% @shopping_cart_items.each do |sci| %>
+    <div class="row">
+      
+      <div class="col-md-1">
+        <%=link_to"X",sci, method: :delete, class: :deleteButton %>
+      </div>
+      <div class="col-md-5">
+        <%=link_to image_tag(sci.item.photo_url, size: '150x250'), sci.item %></span>
+        Name: <%= sci.item.name %>
+      </div>
+      <div class="col-md-2">
+        <%=form_for sci do |f| %>
+          <%=f.label :Quantity %><br />
+          <%=f.text_field :quantity %>
+          <%=f.submit "update" %>
+        <% end %>
+      </div>
+      <div class="col-md-2">
+        <%= sci.item.price %>
+      </div>
+      <div class="col-md-2">
+         
+      </div>
+      
+    </div><br />
+    <% end %>
+  </div>
+
+      
+ 
+  
+
