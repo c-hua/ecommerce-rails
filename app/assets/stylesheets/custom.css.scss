@@ -1,0 +1,249 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+@import url(http://fonts.googleapis.com/css?family=Gilda+Display);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+
+
+// ------------------------------ nav index -----------------------------------
+
+
+.navbar-link {
+	margin-right: 15px;
+}
+
+.navbar {
+	border-bottom: 1px solid white;
+  background-color: black;
+  height:70px;
+}
+.logo {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 65px;
+  margin-top: -3px;
+.logo:hover {
+  text-decoration: none;
+}
+
+}
+.nav-links {
+  margin-left: 170px;
+  .shop {
+    margin-top: 3px;
+    color: white;
+    font-family: 'Raleway Dots', cursive;
+
+  }
+}
+
+.navbar-link {
+  color: white;
+
+
+}
+.glyphicon-shopping-cart {
+  color: white;
+}
+
+// -------------------------------------Sign In Modal ---------------------------------
+
+.sign-in-modal {
+  text-align: center;
+}
+
+// ----------------------------------Welcome Index ---------------------------------
+
+body {
+  background-color: black;
+}
+
+.carousel-inner > .item > img {
+  width: 100%;
+}
+
+#carousel-example {
+  margin-top: -18px;
+  .caption1 {
+    margin-left: -255px;
+    margin-bottom: -20px;
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(20,20,20,.5);
+    .c1 {
+      text-align: left;
+      color:#9d571f;
+      margin-left: 20px;
+      z-index: 10;
+      
+
+    }
+    #c1-header {
+      font-size: 75px;
+    }
+    #c1-description {
+      color: #b5030d;
+      z-index: 10;
+    }
+    #c2-header {
+      font-size: 100px;
+    }
+  }
+
+}
+ 
+
+// -------------------------------------items index--------------------------------------
+
+#items-title {
+  color: #8f8f8f;
+  font-family: 'Dosis', sans-serif;
+  text-indent: 25px;
+}
+.item-box {
+  text-align: center;
+}
+.items {
+  text-align: center;
+}
+.image-box {
+  z-index: 10;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+
+.image-box:hover {
+  opacity: .3;  
+
+}
+
+.item-container {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.item-name {
+  font-size: 20px;
+}
+.item-price {
+  font-size: 40px;
+
+}
+
+// -------------------------------------items Show--------------------------------------
+
+.item-show-container {
+  // background-color: rgba(125,125,125,.3);
+  border-radius: 30px;
+  height: 700px;
+.back-button {
+  text-align: left;
+}
+#back-button {
+  text-indent: 20px;
+}
+  
+}
+.show-details {
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 450px;
+  width: 600px;
+  background-color: rgba(135,135,135,.3);
+}
+.show-name {
+  color: #25b5c6;
+  z-index: 10;
+}
+.show-line {
+  color:white;
+}
+
+#show-image {
+  border-radius: 20px;
+}
+#color, #price {
+  font: 20px;
+  color: #c21b6f;
+  text-indent: 5px;
+}
+#show-color, #show-price, .price-color {
+  color: #c5c5c5;
+  
+}
+#show-size, #show-quantity {
+  color: #c21b6f;
+}
+#size-buttons {
+  font-size: 20px;
+  text-indent: 25px;
+  color: #25b5c6;
+
+}
+#qty-field {
+  width: 50px;
+}
+.btn-dec {
+  background-color: red;
+  color: white;
+  margin-left: 130px;
+  margin-top: -15px;
+  height: 60px;   
+}
+
+// ----------------------------------------Shopping_Cart_Items Edit -----------------------
+
+.sc-titles {
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+}
+.sc-items-details {
+  margin-left: 30px;
+}
+
+.deleteButton {
+  text-align: center;
+}
+
+.sc-items-list {
+  // border: 1px solid black;
+}
+.deleteButton {
+  margin-left: 30px;
+}
+#item-header {
+  text-align: center;
+  margin-right: 50px;
+}
+
+
+// ----------------------------------------Users New -----------------------
+
+#title {
+  text-align: center;
+  color: white;
+}
+.sign-up {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-top: -3px;
+  
+}
+
+.sign-up-form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 16px;
+
+}
+
